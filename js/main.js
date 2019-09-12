@@ -121,7 +121,7 @@ const austin = createPopArtist("Austin Kinkaid", "Pop", "22")
     polarRecords.push(austin);
 
 const loyonce = createRapArtist("Loyonce", "Rap", "27")
-    jumpStopRecords.push(dusta);
+    jumpStopRecords.push(loyonce);
 
 
 console.log(jumpStopRecords);
