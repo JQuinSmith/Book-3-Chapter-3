@@ -6,13 +6,14 @@ Specialty (Oncologist, pediatrician, etc...)
 Address of practice */
 
 // Doctor factory function
-const newDoctor = (name, specialty, address) => {
-    return {
-        name: name.name,
-        specialty: specialty.specialty,
-        address: address.address
-    }
-}
+
+// const newDoctor = (name, specialty, address) => {
+//     return {
+//         name: name.name,
+//         specialty: specialty.specialty,
+//         address: address.address
+//     }
+// }
 
 /* Lightning Exercise 2: Write a factory function that creates an object that represents a pet. The function should accept two arguments:
 
@@ -23,22 +24,106 @@ Invoke the factory function 3 times and place each animal in an array stored in 
 
 
 // The pet factory function
-const newPet = (name, breed) => {
+
+// const newPet = (name, breed) => {
+//     return {
+//         name: name,
+//         breed: breed
+//     }
+// }
+
+// let BowWowKennels = [];
+
+// const simba = newPet("simba", "black lab")
+// BowWowKennels.push(simba);
+
+// const polo = newPet("Polo", "Akita Inu")
+// BowWowKennels.push(polo);
+
+// const PJ = newPet("PJ", "Akita Inu")
+// BowWowKennels.push(PJ);
+
+// console.log(BowWowKennels);
+
+/* 
+Practice: Music Row 
+
+
+JumpStop Records works with Funk and Rap artists.
+Chatten Records works with Country and Bluegrass artists.
+Polar Records works with Pop artists.
+
+*/
+
+const jumpStopRecords = [];
+const chattenRecords = [];
+const polarRecords = [];
+
+const createBluegrassArtist = (name, genre, age) => {
     return {
         name: name,
-        breed: breed
+        genre: genre,
+        age: age
     }
 }
 
-let BowWowKennels = [];
+const createCountryArtist = (name, genre, age) => {
+    return {
+        name: name,
+        genre: genre,
+        age: age
+    }
+}
 
-const simba = newPet("simba", "black lab")
-BowWowKennels.push(simba);
+const createFunkArtist = (name, genre, age) => {
+    return {
+        name: name,
+        genre: genre,
+        age: age
+    }
+}
 
-const polo = newPet("Polo", "Akita Inu")
-BowWowKennels.push(polo);
+const createPopArtist = (name, genre, age) => {
+    return {
+        name: name,
+        genre: genre,
+        age: age
+    }
+}
 
-const PJ = newPet("PJ", "Akita Inu")
-BowWowKennels.push(PJ);
+const createRapArtist = (name, genre, age) => {
+    return {
+        name: name,
+        genre: genre,
+        age: age
+    }
+}
 
-console.log(BowWowKennels);
+const bruce = createCountryArtist("Bruce Atkins", "Country", "23")
+    chattenRecords.push(bruce);
+
+const jensen = createPopArtist("Jensen Brown", "Pop", "20")
+    polarRecords.push(jensen);
+
+const dre = createFunkArtist("Dre Funkz", "Funk", "25")
+    jumpStopRecords.push(dre);
+
+const dusta = createRapArtist("Dusta Grimes", "Rap", "21")
+    jumpStopRecords.push(dusta);
+
+const bartholomew = createBluegrassArtist("Bartholomew Danielson", "Bluegrass", "23")
+    chattenRecords.push(bartholomew);
+
+const avilee = createCountryArtist("Avilee Dallas", "Country", "19")
+    jumpStopRecords.push(avilee);
+
+const austin = createPopArtist("Austin Kinkaid", "Pop", "22")
+    polarRecords.push(austin);
+
+const loyonce = createRapArtist("Loyonce", "Rap", "27")
+    jumpStopRecords.push(dusta);
+
+
+console.log(jumpStopRecords);
+console.log(chattenRecords);
+console.log(polarRecords);
